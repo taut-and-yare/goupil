@@ -59,7 +59,7 @@ For the tech savvy here is a (non-exhaustive) list of the proposed stack:
 - Newsletter / Campaigns
 - Web shop (catalogue / order processing)
 
-## Maintenance / software-updates / technical support
+### Maintenance / software-updates / technical support
 
 ## Visual & content
 ### Overall design
