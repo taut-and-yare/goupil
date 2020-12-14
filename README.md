@@ -50,12 +50,12 @@
 - All designs need to be "reproduced" on the browser
 - Navigation menu(s)
 
-User management (mostly out-of-the-box, slight customizations):
+### User management (mostly out-of-the-box, slight customizations):
 - User management system 
 - User roles / permissions i.e. admins, authors, volunteers (mostly out-of-the-box, slight customizations)
 - GDPR compliance ( users must be able to view / download / delete any of their own data  we keep )
 
-CMS customization (mostly out-of-the-box, slight customizations):
+### CMS customization (mostly out-of-the-box, slight customizations):
 - custom toolbar buttons and plugins for (even) easier content creation
 - unit tests
 
@@ -63,7 +63,7 @@ CMS customization (mostly out-of-the-box, slight customizations):
 - Configuration
 - Templates customization / styles to match design
 
-Email back-end for outbound emails:
+### Email back-end for outbound emails:
 - Integration with an email delivery app (e.g. sendinblue, sendgrid etc.) This ensures emails are not blocked nor end up in the spam folder.
 - unit tests
 
@@ -123,25 +123,17 @@ show a counter of hours-of-work / number-of-animals for any given day
 - unit tests
 
 
-
-## Infrastructure
+## Migration & infrastructure
 - switch cloud infrastructure (within OVH or other)
+- DNS changes ("transfer" domain name to new site)
 - email solution (for setting up @goupilconnection.org mailboxes)
     - setup required accounts
     - potentially migrate existing email archives (hope not)
 - schedule database backups
 
 
-## Architecture
-The web application will be following a state-of-the-art architecture pradigm which is: 
-- fully extensible and modular: practically anything one can do online can be integrated if needed e.g. live-chat, push notifications, APIs, mobile application, you name it
-- using established open-source software: not to end up in today's spip3 situation 10 years from now
-- test-driven: automated tests are written for ALL custom-build funcionality ensuring that nothing breaks upon updating or further developing
-- platform agnostic: it will run everywhere as is. On any server, operating system, even on your laptop. Very useful in case you wish to change hosting provider 
-
-
 ## Technical details
-For the tech savvy here is a (non-exhaustive) list of the proposed stack:
+For the tech savvy here is a list of the proposed stack:
 
 **Docker** is used for containerizing the application (https://www.docker.com/)
 
