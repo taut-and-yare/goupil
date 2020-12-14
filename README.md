@@ -1,55 +1,11 @@
 # GOUPIL WORKLOAD OVERVIEW
 
-## Introduction
-Based on what we discussed on our meeting on the 6th of November, hereby a complete solution for all things inforatique. It comprises of:
-1. A redesigned website which is clean, fast and fully operational across all devices
-2. A modern Content Management System, tailored to Goupil's needs for ease of use
-3. Increase in visibility / number of adherants & donations via Newsletter Campaigns, Social Media Management & Search Engine Optimisation
-4. Immediate e-commerce integration to increase revenue by selling Goupil-branded products
-5. Professional email solution
-6. Internal tools / intranet (document sharing, scheduling app)
-7. Training sessions
-8. Full technical support & maintenance for years ahead
-
-
-## Architecture
-The web application will be following a state-of-the-art architecture pradigm which is: 
-- fully extensible and modular: practically anything one can do online can be integrated if needed e.g. live-chat, push notifications, APIs, mobile application, you name it
-- using established open-source software: not to end up in today's spip3 situation 10 years from now
-- test-driven: automated tests are written for ALL custom-build funcionality ensuring that nothing breaks upon updating or further developing
-- platform agnostic: it will run everywhere as is. On any server, operating system, even on your laptop. Very useful in case you wish to change hosting provider 
-
-
-## Technical details
-For the tech savvy here is a (non-exhaustive) list of the proposed stack:
-
-**Docker** is used for containerizing the application (https://www.docker.com/)
-
-### Services
-- Back-end:
-    - language: python (https://www.python.org/)
-    - framework: django (https://www.djangoproject.com/)
-    - Content Management System: djangoCMS (https://www.django-cms.org/en/)
-- Database: Postgresql (https://www.postgresql.org/)
-- Caching / message broker: Redis (https://redis.io/)
-- Task queue / scheduler: Celery (https://docs.celeryproject.org/en/stable/)
-- Search engine: elastisearch (https://www.elastic.co/elastic-stack)
-
-### Devops
-- version control: git (https://git-scm.com/)
-- duplicated staging and live server environments
-- automated pipelines for testing & continuous integration / deployment: via github actions (https://github.com/)
-- automated software updates via dependabot (https://dependabot.com/)
-- log monitoring via sentry (https://sentry.io)
-
-
-
 ## Collaboration
 ### Additional meetings
 - Precise design specs
 - Validate content
 - Precise extra functionalities
-- feedback rounds
+- Feedback iterations
 
 ### Training
 - Basic CMS usage
@@ -59,7 +15,9 @@ For the tech savvy here is a (non-exhaustive) list of the proposed stack:
 - Newsletter / Campaigns
 - Web shop (catalogue / order processing)
 
-### Maintenance / software-updates / technical support
+## Support
+- software updates
+- inrastructure monitoring
 
 ## Visual & content
 ### Overall design
@@ -174,6 +132,35 @@ show a counter of hours-of-work / number-of-animals for any given day
 - schedule database backups
 
 
+## Architecture
+The web application will be following a state-of-the-art architecture pradigm which is: 
+- fully extensible and modular: practically anything one can do online can be integrated if needed e.g. live-chat, push notifications, APIs, mobile application, you name it
+- using established open-source software: not to end up in today's spip3 situation 10 years from now
+- test-driven: automated tests are written for ALL custom-build funcionality ensuring that nothing breaks upon updating or further developing
+- platform agnostic: it will run everywhere as is. On any server, operating system, even on your laptop. Very useful in case you wish to change hosting provider 
+
+
+## Technical details
+For the tech savvy here is a (non-exhaustive) list of the proposed stack:
+
+**Docker** is used for containerizing the application (https://www.docker.com/)
+
+### Services
+- Back-end:
+    - language: python (https://www.python.org/)
+    - framework: django (https://www.djangoproject.com/)
+    - Content Management System: djangoCMS (https://www.django-cms.org/en/)
+- Database: Postgresql (https://www.postgresql.org/)
+- Caching / message broker: Redis (https://redis.io/)
+- Task queue / scheduler: Celery (https://docs.celeryproject.org/en/stable/)
+- Search engine: elastisearch (https://www.elastic.co/elastic-stack)
+
+### Devops
+- version control: git (https://git-scm.com/)
+- duplicated staging and live server environments
+- automated pipelines for testing & continuous integration / deployment: via github actions (https://github.com/)
+- automated software updates via dependabot (https://dependabot.com/)
+- log monitoring via sentry (https://sentry.io)
 
 
 ## Estimated annual operational costs
