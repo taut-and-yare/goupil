@@ -30,6 +30,7 @@
 - HFS page
 - Contact page
 - Events page
+- Sponsors / partners page
 - Tutorials page (adherants only)
 - Shop pages: storefront, category views, detail views
 - Newsletter default email templates
