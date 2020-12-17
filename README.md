@@ -14,7 +14,7 @@
 - Sponsors / partners page
 - Tutorials page (adherants only)
 - Shop pages: storefront, category views, detail views
-- Newsletter default email templates
+- Newsletter: default email templates
 - Header / Footer
 ### Content creation
 - Clarify main-menu structure
@@ -53,6 +53,7 @@
 - Product / product categories models and templates
 - Payment gateway
 - Unit tests
+
 Disclaimer: snipcart will charge 1.5% of your sales if your sales are over 500€/month
 ### Donation/adherants application
 - Integration with helloasso API ( https://dev.helloasso.com/v3/responses#paiements )
@@ -116,6 +117,7 @@ Show a counter of hours-of-work / number-of-animals for any given day
 
 ## Technical details
 For the tech savvy here is a list of the proposed stack:
+
 **Docker** is used for containerizing the application (https://www.docker.com/)
 ### Services
 - Back-end:
